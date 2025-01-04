@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", Arial;
+}
+
+/**HEADER**/
+
+header {
+  background: linear-gradient(90deg, #672280 1.18%, #8A24AE 56.35%, #A626D3 100%);
+  height: 65px;
+  display: flex;
+  align-items: center;
+  padding-inline: 36px;
+}
+
+.header--logo {
+  width: 32PX;
+}
+
+.header--title-primary, .header--title-secondary {
+  flex-shrink: 0;
+}
+
+.header--title-primary {
+  margin-right: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.header--title-secondary {
+  font-family: "Inter", Arial;
+  color: white;
+  font-size: 12px;
+}
+
+/**MAIN**/
+/**USER INPUT SECTION**/
+
+main {
+  padding: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.meme {
+  width: 600px;
+}
+
+.meme--user-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+}
+
+.meme--user-input-label {
+  font-size: 14px;
+  color: #374151;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+
+.meme--user-input-top-text, .meme--user-input-bottom-text {
+  text-indent: 8px;
+  font-size: 14px;
+  padding-block: 8px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+.meme--user-button {
+  margin-top: 16px;
+  border-radius: 4px;
+  grid-column: 1 / -1;
+  border: none;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #672280 1.18%, #8A24AE 56.35%, #A626D3 100%);
+}
+
+.meme--meme-generated-container {
+  margin-top: 50px;
+  position: relative;
+  background-color: lightblue;
+  width: 100%;
+}
+
+.meme--meme-generated-img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.meme--meme-generated-top-text, .meme--meme-generated-bottom-text {
+  position: absolute;
+  color: white;
+  font-family: Arial;
+  font-weight: 800;
+  font-size: 50px;
+  -webkit-text-stroke: 2px black;
+}
+
+.meme--meme-generated-top-text {
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.meme--meme-generated-bottom-text {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
